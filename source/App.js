@@ -19,9 +19,6 @@ enyo.kind({
 		]},
 		{kind: "PercentCalculator", name: "percentCalculator", onCalculated: "updateControls"}
 	],
-	create: function() {
-		this.inherited(arguments);
-	},
 	updateControls: function(inSource, inEvent) {
 		this.$.tipAmount.setContent("The tip is: " + inEvent.percentValue);
 
