@@ -25,8 +25,8 @@ enyo.kind({
 		return true; // stop bubbling
 	},
 	calculateWithComponent: function(inSource, inEvent) {
-		var sum = this.$.sumControl.hasNode().value;
-		var percent = this.$.percentControl.hasNode().value;
+		var sum = this.$.sumControl.getValue();
+		var percent = this.$.percentControl.getValue();
 
 		this.$.percentCalculator.setSum(sum);
 		this.$.percentCalculator.setPercent(percent);
